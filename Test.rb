@@ -1,7 +1,19 @@
-hash = Hash.new([])
+class Dog
+    def name
+      "Fido"
+    end
 
-    hash[:one] << "uno"
-    hash[:two] << "dos"
-puts "----"
-    puts hash[:one]
-    puts hash[:two]
+    private
+
+    def tail
+      "tail"
+    end
+
+    def head
+        "head"
+    end
+end
+
+rover = Dog.new
+
+rover.head
